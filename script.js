@@ -37,7 +37,7 @@
         opacityDisplay.textContent = opacity + "%";
       });
 
-      // Fungsi untuk load image yang diupload
+      // Fungsi  load image yang diupload
       imageUpload.addEventListener("change", (event) => {
         const file = event.target.files[0];
         if (file) {
