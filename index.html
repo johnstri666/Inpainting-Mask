@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inpainting Mask</title>
+    <title>Inpainting</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,6 +14,27 @@
     </div>
 
     <div id="toolbar">
+      <!-- Tambahkan tombol upload -->
+      <div class="toolbar-section">
+        <div class="section-title">
+          <i class="fas fa-image"></i>
+          Image
+        </div>
+        <input
+          type="file"
+          id="imageUpload"
+          class="file-input"
+          accept="image/*"
+        />
+        <button
+          class="btn btn-upload"
+          onclick="document.getElementById('imageUpload').click()"
+        >
+          <i class="fas fa-upload"></i>
+          Upload Image
+        </button>
+      </div>
+
       <div class="toolbar-section">
         <div class="section-title">
           <i class="fas fa-paint-brush"></i>
@@ -86,6 +108,6 @@
     <canvas id="canvas"></canvas>
     <div class="brush-preview" id="brushPreview"></div>
 
-    <script src="script.js"></script>
+    <script src="sript.js"></script>
   </body>
 </html>
